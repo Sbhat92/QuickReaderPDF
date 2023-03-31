@@ -3,8 +3,7 @@ from fpdf import FPDF
 import pdfkit
 import os
 
-file = "sample.pdf"
-file_name = "out.pdf"
+import sys
 
 def pdf_reader(file):
     doc=""
@@ -17,12 +16,29 @@ def pdf_reader(file):
     return doc
 
 
-def text_to_pdf(text, filename):
-        splitted = text.split('\n')
-        Func = open("html_from_pdf.html", "x")
+def create_html(filename):
+        Func = open(filename, "x")
         Func.close()
 
-        Func = open("html_from_pdf.html","r+")
+def format(splitted,Func):
+     for line in splitted:                   
+        words=line.split(" ")
+        for i in words:
+            if len(i)>3:
+                highlight=i[0:3]
+                nonhighlight=i[3:]
+                Func.write("<b>")
+                Func.write(highlight)
+                Func.write("</b>")
+                Func.write(nonhighlight)
+                Func.write(" ")
+
+        Func.write("<br>")
+
+def text_to_pdf(text,html_file):
+        splitted = text.split('\n')        
+        create_html(html_file)
+        Func = open(html_file,"r+")
 
         Func.write("""<!DOCTYPE html>
                     <html>
@@ -31,22 +47,7 @@ def text_to_pdf(text, filename):
                     <p style="color:black;font-size:21px;">
                     
                     """)
-        
-        for line in splitted:           
-            words=line.split(" ")
-            for i in words:
-                 if len(i)>3:
-                      highlight=i[0:3]
-                      nonhighlight=i[3:]
-                      Func.write("<b>")
-                      Func.write(highlight)
-                      Func.write("</b>")
-                      Func.write(nonhighlight)
-                      Func.write(" ")
-
-            Func.write("<br>")
-            Func.write("<br>")
-                    
+        format(splitted,Func)   
         Func.write("""
         </p>
         </body>
@@ -54,15 +55,26 @@ def text_to_pdf(text, filename):
         Func.close()
 
 
-def pdf_bolden(file):
+def pdf_bolden(file,html_file):
     doc=pdf_reader(file) 
-    text_to_pdf(doc,"output.pdf")
+    text_to_pdf(doc,html_file)
 
-def pdf_to_html(file_name):
-     pdfkit.from_file('html_from_pdf.html', file_name)
+def pdf_to_html(html_file, file_name):  
+    path=os.getcwd()  
+    pdfkit.from_file(html_file, file_name)
+    
+def remove_html(html_file):
+    os.remove(html_file)
 
-pdf_bolden(file)
 
-pdf_to_html(file_name)
 
-os.remove("html_from_pdf.html")
+def main(file = "sample.pdf",file_name = "out.pdf"):
+    html_file="htmltoPDF.html"
+    pdf_bolden(file,html_file)
+    pdf_to_html(html_file,file_name)
+    remove_html(html_file)
+
+
+if __name__ == "__main__":
+    print ("Executed when invoked directly")
+    main(sys.argv[1],sys.argv[2])
