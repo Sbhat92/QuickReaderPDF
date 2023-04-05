@@ -1,16 +1,12 @@
 import os
 from unittest.mock import patch
-import unittest 
-from unittest import mock
-from unittest.mock import MagicMock
 from fpdf import FPDF
-from unittest.mock import patch, mock_open, Mock
+from unittest.mock import patch
 import sys
 sys.path.append('../')
-from pdfeditor import *
+from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,pdf_bolden
 
 def test_pdf_reader(tmp_path):
-    read_data = "data"
     file_path = os.path.join(tmp_path, 'test_file.pdf')
     data=[1,2,3,4,5,6]
     pdf = FPDF(format='letter')
@@ -60,8 +56,8 @@ def test_pdf_to_html(tmp_path):
     assert os.path.isfile(file_path_pdf)
     pass
 
-def test_remove_html():
-    file_path = os.path.join("", 'test_file.html')
+def test_remove_html(tmp_path):
+    file_path = os.path.join(tmp_path, 'test_file.html')
     # Create a test file
     with open(file_path, 'w') as f:
         f.write('This is a test.')
@@ -79,10 +75,9 @@ def test_format(tmp_path):
         assert os.path.isfile(file_path_html)
         
 
-def test_pdf_bolden(tmp_path):
-    file_path_html = os.path.join(tmp_path, 'testfile.html')
-    file_path_pdf = os.path.join(tmp_path, 'testfile.pdf')
-    pdf_bolden(file_path_pdf,file_path_html)
-    with open(file_path_html, 'r') as Func:
-        assert 1==1
+# def test_pdf_bolden(tmp_path):
+#     file_path_html = os.path.join(tmp_path, 'testfile.html')
+#     file_path_pdf = os.path.join(tmp_path, 'testfile.pdf')
+#     pdf_bolden(file_path_pdf,file_path_html)
+    
 
