@@ -1,9 +1,9 @@
 import sys
 import os
 from fpdf import FPDF
-
-sys.path.append('../')
 from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html
+sys.path.append('../')
+
 
 def test_pdf_reader(tmp_path):
     file_path = os.path.join(tmp_path, 'test_file.pdf')
