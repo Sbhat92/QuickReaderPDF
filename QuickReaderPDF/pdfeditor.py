@@ -1,3 +1,4 @@
+"""Module bolds first three letters of each word."""
 from pypdf import PdfReader
 import pdfkit
 import os
@@ -21,7 +22,7 @@ def create_html(filename):
     Func.close()
 
 
-def format(splitted, Func):
+def format_file(splitted, Func):
     for line in splitted:
         words = line.split(" ")
         for i in words:
