@@ -72,6 +72,3 @@ def test_format_file(tmp_path):
     with open(file_path_html, 'w') as Func:
         format_file(["Hello"],Func)
         assert os.path.isfile(file_path_html)
-        
-
-
