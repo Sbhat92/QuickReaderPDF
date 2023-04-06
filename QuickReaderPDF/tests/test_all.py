@@ -1,10 +1,9 @@
-import os
-from unittest.mock import patch
-from fpdf import FPDF
-from unittest.mock import patch
 import sys
+import os
+from fpdf import FPDF
+from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html
 sys.path.append('../')
-from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,pdf_bolden
+
 
 def test_pdf_reader(tmp_path):
     file_path = os.path.join(tmp_path, 'test_file.pdf')
@@ -75,9 +74,4 @@ def test_format(tmp_path):
         assert os.path.isfile(file_path_html)
         
 
-# def test_pdf_bolden(tmp_path):
-#     file_path_html = os.path.join(tmp_path, 'testfile.html')
-#     file_path_pdf = os.path.join(tmp_path, 'testfile.pdf')
-#     pdf_bolden(file_path_pdf,file_path_html)
-    
 
