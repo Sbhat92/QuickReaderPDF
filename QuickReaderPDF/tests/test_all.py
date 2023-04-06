@@ -23,8 +23,8 @@ def test_text_to_pdf(tmp_path):
     text_to_pdf(text,file_path)
     Func = open(file_path,"r+")
     
-    assert Func.read().split() == """<!DOCTYPE html><html>
-    <body><center><p style="color:black;font-size:21px;"><b>
+    assert Func.read().split() == """<!DOCTYPE html><html>\
+    <body><center><p style="color:black;font-size:21px;"><b>\
     hel</b>lo <br></p></body></html>""".split()
 
 
