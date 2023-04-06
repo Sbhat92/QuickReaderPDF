@@ -1,7 +1,7 @@
 import sys
 import os
 from fpdf import FPDF
-from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html
+from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,format_file
 sys.path.append('../')
 
 
@@ -67,10 +67,10 @@ def test_remove_html(tmp_path):
     assert not os.path.isfile(file_path)
     pass
 
-def test_format(tmp_path):
+def test_format_file(tmp_path):
     file_path_html = os.path.join(tmp_path, 'testfile.html')
     with open(file_path_html, 'w') as Func:
-        format(["Hello"],Func)
+        format_file(["Hello"],Func)
         assert os.path.isfile(file_path_html)
         
 
