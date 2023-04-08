@@ -1,8 +1,9 @@
 import sys
 import os
 from fpdf import FPDF
-from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,format_file
+from QuickReaderPDF import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,format_file # noqa: E501
 sys.path.append('../')
+sys.path.append('./')
 
 
 def test_pdf_reader(tmp_path):
@@ -22,17 +23,7 @@ def test_text_to_pdf(tmp_path):
     text="hello"
     text_to_pdf(text,file_path)
     Func = open(file_path,"r+")
-    
-    assert Func.read().split() == """<!DOCTYPE html>
-                            <html>
-                            <body>
-                            <center>
-                            <p style="color:black;font-size:21px;">
-                            
-                            <b>hel</b>lo <br>
-                </p>
-                </body>
-                </html>""".split()
+    assert Func.read().split() == ['<!DOCTYPE', 'html>', '<html>', '<body>', '<center>', '<p', 'style="color:black;font-size:21px;">', '<b>hel</b>lo', '<br>', '</p>', '</body>', '</html>']# noqa: E501
 
 
 def test_create_html(tmp_path):
@@ -48,12 +39,17 @@ def test_pdf_to_html(tmp_path):
             
     file_path_html = os.path.join(tmp_path, 'test_file.html')
     file_path_pdf = os.path.join(tmp_path, 'test_file.pdf')
-    with open(file_path_html, 'wb') as f:
-        f.write(b'This is a test.')
+    f = open(file_path_html,'w')
+    message = """<html>
+    <head></head>
+    <body><p>Hello World!</p></body>
+    </html>""" # noqa: E501
+    f.write(message)
+    f.close()
 
     pdf_to_html(file_path_html,file_path_pdf)    
     assert os.path.isfile(file_path_pdf)
-    pass
+
 
 def test_remove_html(tmp_path):
     file_path = os.path.join(tmp_path, 'test_file.html')
@@ -61,7 +57,7 @@ def test_remove_html(tmp_path):
     with open(file_path, 'w') as f:
         f.write('This is a test.')
     # Call the delete_file function with the file path
-    remove_html('test_file.html')
+    remove_html(file_path)
 
     # Check that the file was deleted
     assert not os.path.isfile(file_path)
@@ -72,6 +68,3 @@ def test_format_file(tmp_path):
     with open(file_path_html, 'w') as Func:
         format_file(["Hello"],Func)
         assert os.path.isfile(file_path_html)
-        
-
-

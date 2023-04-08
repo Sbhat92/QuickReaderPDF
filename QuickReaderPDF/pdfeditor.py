@@ -49,7 +49,7 @@ def text_to_pdf(text, html_file):
                 <center>
                 <p style="color:black;font-size:21px;">
                 """)
-    format(splitted, Func)
+    format_file(splitted, Func)
     Func.write("""
     </p>
     </body>
@@ -63,7 +63,14 @@ def pdf_bolden(file, html_file):
 
 
 def pdf_to_html(html_file, file_name):
-    pdfkit.from_file(html_file, file_name)
+    config = pdfkit.configuration()
+    print(config)
+    try:
+        pdfkit.from_file([html_file], file_name,configuration=config)
+    except OSError:
+        #not present in PATH
+        print(OSError)
+    
 
 
 def remove_html(html_file):
