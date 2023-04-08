@@ -63,7 +63,7 @@ def pdf_bolden(file, html_file):
 
 
 def pdf_to_html(html_file, file_name):
-    pdfkit.from_file(html_file, file_name)
+    pdfkit.from_file([html_file], file_name)
 
 
 def remove_html(html_file):
