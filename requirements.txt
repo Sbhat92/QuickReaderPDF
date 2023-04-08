@@ -1,4 +1,4 @@
 pypdf==3.7.0
 pdfkit==1.0.0
 fpdf==1.7.2
-wkhtmltopdf==0.12.5
+wkhtmltopdf==0.2
