@@ -23,10 +23,9 @@ def test_text_to_pdf(tmp_path):
     text="hello"
     text_to_pdf(text,file_path)
     Func = open(file_path,"r+")
-    
-    assert Func.read().split() == """<!DOCTYPE html><html>\
-    <body><center><p style="color:black;font-size:21px;"><b>\
-    hel</b>lo <br></p></body></html>""".split()
+    assert Func.read().split() == ['<!DOCTYPE', 'html>', '<html>', \
+                                   '<body>', '<center>', '<p', 'style="color:black;font-size:21px;">',\
+                                      '<b>hel</b>lo', '<br>', '</p>', '</body>', '</html>']
 
 
 def test_create_html(tmp_path):
@@ -55,7 +54,7 @@ def test_remove_html(tmp_path):
     with open(file_path, 'w') as f:
         f.write('This is a test.')
     # Call the delete_file function with the file path
-    remove_html('test_file.html')
+    remove_html(file_path)
 
     # Check that the file was deleted
     assert not os.path.isfile(file_path)

@@ -49,7 +49,7 @@ def text_to_pdf(text, html_file):
                 <center>
                 <p style="color:black;font-size:21px;">
                 """)
-    format(splitted, Func)
+    format_file(splitted, Func)
     Func.write("""
     </p>
     </body>
