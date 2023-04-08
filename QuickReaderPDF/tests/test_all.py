@@ -42,8 +42,8 @@ def test_pdf_to_html(tmp_path):
     with open(file_path_html, 'w') as f:
         f.write('This is a test.')
 
-    #pdf_to_html(file_path_html,file_path_pdf)    
-    assert os.path.isfile(file_path_html)
+    pdf_to_html(file_path_html,file_path_pdf)    
+    assert os.path.isfile(file_path_pdf)
 
 
 def test_remove_html(tmp_path):
