@@ -63,9 +63,9 @@ def pdf_bolden(file, html_file):
 
 
 def pdf_to_html(html_file, file_name):
+    config = pdfkit.configuration()
+    print(config)
     try:
-        config = pdfkit.configuration()
-        print(config)
         pdfkit.from_file([html_file], file_name)
     except OSError:
         #not present in PATH
