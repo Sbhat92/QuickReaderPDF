@@ -39,8 +39,13 @@ def test_pdf_to_html(tmp_path):
             
     file_path_html = os.path.join(tmp_path, 'test_file.html')
     file_path_pdf = os.path.join(tmp_path, 'test_file.pdf')
-    with open(file_path_html, 'w') as f:
-        f.write('This is a test.')
+    f = open(file_path_html,'w')
+    message = """<html>
+    <head></head>
+    <body><p>Hello World!</p></body>
+    </html>""" # noqa: E501
+    f.write(message)
+    f.close()
 
     pdf_to_html(file_path_html,file_path_pdf)    
     assert os.path.isfile(file_path_pdf)
