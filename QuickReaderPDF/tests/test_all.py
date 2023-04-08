@@ -23,9 +23,7 @@ def test_text_to_pdf(tmp_path):
     text="hello"
     text_to_pdf(text,file_path)
     Func = open(file_path,"r+")
-    assert Func.read().split() == ['<!DOCTYPE', 'html>', '<html>', \
-                                   '<body>', '<center>', '<p', 'style="color:black;font-size:21px;">',\
-                                      '<b>hel</b>lo', '<br>', '</p>', '</body>', '</html>']
+    assert Func.read().split() == ['<!DOCTYPE', 'html>', '<html>', '<body>', '<center>', '<p', 'style="color:black;font-size:21px;">', '<b>hel</b>lo', '<br>', '</p>', '</body>', '</html>']# noqa: E501
 
 
 def test_create_html(tmp_path):
