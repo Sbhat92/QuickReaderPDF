@@ -66,11 +66,10 @@ def pdf_to_html(html_file, file_name):
     config = pdfkit.configuration()
     print(config)
     try:
-        pdfkit.from_file([html_file], file_name,configuration=config)
+        pdfkit.from_file([html_file], file_name, configuration=config)
     except OSError:
-        #not present in PATH
+        # not present in PATH
         print(OSError)
-    
 
 
 def remove_html(html_file):
