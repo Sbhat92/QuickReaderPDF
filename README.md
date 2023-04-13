@@ -5,7 +5,7 @@
 ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF)
 
 
-[![Linting, Testing](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/linting-testing.yml/badge.svg)](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/linting-testing.yml)
+![Linting, Testing Status](https://github.com/your-username/your-repo-name/actions/workflows/linting-testing.yml/badge.svg?branch=main&event=push)
 
 
 [![Codecov](https://codecov.io/gh/Sbhat92/QuickReaderPDF/branch/main/graph/badge.svg)](https://codecov.io/gh/Sbhat92/QuickReaderPDF)
