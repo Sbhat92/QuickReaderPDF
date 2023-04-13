@@ -1,6 +1,9 @@
 name: linting, testing
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
     - main
@@ -42,3 +45,5 @@ jobs:
           --cov=. --cov-report html
           # Print coverage information
           cat htmlcov/index.html
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
