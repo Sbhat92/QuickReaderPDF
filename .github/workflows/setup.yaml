@@ -1,9 +1,6 @@
-name: pytest
+name: linting, testing
 
 on:
-  push:
-    branches:
-    - main
   pull_request:
     branches:
     - main
@@ -40,3 +37,5 @@ jobs:
         run: |
           pytest --exitfirst --verbose --failed-first \
           --cov=. --cov-report html
+          # Print coverage information
+          cat htmlcov/index.html
