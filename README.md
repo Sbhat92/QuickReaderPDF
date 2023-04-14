@@ -34,7 +34,7 @@ You're ready to go!
 
 ## Usage
 
-1. Open a terminal in the location of the pdf file you want.
-2. `python pdfeditor.py <name of existing pdf> <name of new pdf>`
+1. Open a terminal in the location of the pdf file you want. 
+2. `python <path to directory with package/pdfeditor.py> <name of existing pdf> <name of new pdf>`
 
 A new pdf file will be created!
