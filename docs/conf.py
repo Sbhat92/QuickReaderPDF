@@ -11,7 +11,7 @@ sys.path.append('.')
 sys.path.append('../QuickReaderPDF')
 
 # Now you can import your modules
-import pdfeditor
+
 
 project = 'QuickReaderPDF'
 copyright = '2023, Shreyas Bhat'
