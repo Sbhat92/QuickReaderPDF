@@ -1,1 +1,1 @@
-from pdfeditor import pdf_reader,text_to_pdf,create_html,pdf_to_html,remove_html,format_file # noqa
+from pdfeditor import url_parser,copy_url,html_to_pdf,read_html_file,create_bs_obj,bolden_html,write_html,remove_html,main_func # noqa

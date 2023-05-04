@@ -1,8 +1,6 @@
 Installation
 ============
 
-To install QuickReaderPDF, you can use pip:
+To install QuickReaderPDF, follow these steps:
 
-.. code-block:: bash
-
-   pip install QuickReaderPDF
+1. pip install QuickReaderPDF
