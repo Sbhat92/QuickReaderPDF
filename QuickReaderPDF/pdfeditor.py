@@ -17,6 +17,7 @@ def url_parser(url):
     Returns:
     requests.Response: The response object returned by the GET request.
     """
+
     response = requests.get(url)
     return response
 
@@ -40,7 +41,7 @@ def read_html_file(html_file):
     """
     Reads the contents of the specified HTML file and returns them as a string.
 
-    Parameters:
+    Args:
     html_file (str): The path and filename of the HTML file to be read.
 
     Returns:
