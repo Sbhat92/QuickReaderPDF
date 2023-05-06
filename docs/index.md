@@ -1,6 +1,6 @@
+
 Welcome to QuickReaderPDF's documentation!
 ==========================================
-
 # QuickReaderPDF
 
 License:
@@ -46,13 +46,10 @@ A new pdf file will be created!
 
 ```eval_rst
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Contents:
 
    modules
-   
-
-
 
 Indices and tables
 ==================

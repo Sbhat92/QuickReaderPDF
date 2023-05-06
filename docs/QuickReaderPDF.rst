@@ -1,6 +1,14 @@
 QuickReaderPDF package
 ======================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   QuickReaderPDF.tests
+
 Submodules
 ----------
 
