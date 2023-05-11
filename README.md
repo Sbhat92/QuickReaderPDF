@@ -7,7 +7,7 @@ Issues:
 ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF)
 
 Pypi
-[![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
+[![PyPI](https://img.shields.io/github/v/release/Sbhat92/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
 # overview
 
 Build:
