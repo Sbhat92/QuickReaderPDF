@@ -7,12 +7,9 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   QuickReaderPDF.tests
+   
 
-Submodules
-----------
-
-QuickReaderPDF.pdfeditor module
+Modules
 -------------------------------
 
 .. automodule:: QuickReaderPDF.pdfeditor

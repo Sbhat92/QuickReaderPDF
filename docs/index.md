@@ -40,10 +40,23 @@ You're ready to go!
 ## Usage
 
 1. Open a terminal in the location of the pdf file you want. 
-2. `python <path to directory with package/pdfeditor.py> <pdf or url> <name of existing pdf> <name of new pdf>`
+2. Use the provided functions to convert a PDF file or URL to a PDF file with bold text:
 
-A new pdf file will be created!
+   To convert a URL to a PDF file with bold text:
 
+
+   url =   `"https://example.com"`
+
+   `python <path to directory with package/pdfeditor.py> <url> url <name of new pdf>`
+
+   To convert a PDF file to a PDF file with bold text:
+
+      input_file = "input.pdf"
+      `python <path to directory with package/pdfeditor.py> <pdf> input_file <name of new pdf>`
+
+   Make sure to replace "https://example.com" with the desired URL and "input.pdf" with the path to your input PDF file.
+
+   
 ```eval_rst
 .. toctree::
    :maxdepth: 2
