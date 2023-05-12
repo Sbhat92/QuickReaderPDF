@@ -26,9 +26,10 @@ def copy_url(response,html_file):
     Writes the content of the response object to the specified HTML file.
 
     Parameters:
-    response (requests.Response): The response object containing the content to be written.
+    response (requests.Response): The response object 
+    containing the content to be written. 
     html_file (str): The path and filename of the HTML file to be written.
-    """
+    """ # noqa: E501
     with open(html_file, "w") as f:
         f.write(response.text)
 
@@ -39,14 +40,15 @@ def html_to_pdf(html_file, pdf_file):
 
 def read_html_file(html_file):
     """
-    Reads the contents of the specified HTML file and returns them as a string.
+    Reads the contents of the specified HTML file and returns
+    them as a string.
 
     Args:
     html_file (str): The path and filename of the HTML file to be read.
 
     Returns:
     str: The contents of the specified HTML file.
-    """
+    """ # noqa: E501
     # Load the HTML file
     with open(html_file) as f:
         html_doc = f.read()
@@ -61,21 +63,22 @@ def create_bs_obj(html_doc):
 
     Returns:
     bs4.BeautifulSoup: The BeautifulSoup object created from the HTML document.
-    """
+    """ # noqa: E501
     # Create a BeautifulSoup object
     soup = BeautifulSoup(html_doc, 'html.parser')
     return soup
 
 def bolden_html(soup):
     """
-    Given a BeautifulSoup object, finds all text in the HTML file and bolds the first three letters of every word.
+    Given a BeautifulSoup object, finds all text in the HTML
+      file and bolds the first three letters of every word.
 
     Parameters:
     soup (bs4.BeautifulSoup): The BeautifulSoup object representing the HTML document.
 
     Returns:
     bs4.BeautifulSoup: The modified BeautifulSoup object with bolded text.
-    """
+    """ # noqa: E501
     # Find all text in the HTML file
     
     # Bold the first three letters of every word using the wrap() method
@@ -93,10 +96,12 @@ def bolden_html(soup):
 
 def write_html(soup,html_file):  
     """
-    Given a BeautifulSoup object and an HTML file path, writes the modified HTML to the specified file.
+    Given a BeautifulSoup object and an HTML file path,
+    writes the modified HTML to the specified file.
 
     Parameters:
-    soup (bs4.BeautifulSoup): The modified BeautifulSoup object to be written to the HTML file.
+    soup (bs4.BeautifulSoup): The modified BeautifulSoup 
+    object to be written to the HTML file.
     html_file (str): The path and filename of the HTML file to be written.
     """      
     # Write the modified HTML to a new file
@@ -117,9 +122,12 @@ def main_func(type = "url", input="sample.pdf", file_name="out.pdf"):
     Converts a PDF file or URL to a PDF file with bold text.
 
     Args:
-        type (str, optional): The type of input. Either "url" or "pdf". Defaults to "url".
-        input (str, optional): The URL or PDF file path. Defaults to "sample.pdf".
-        file_name (str, optional): The name of the output PDF file. Defaults to "out.pdf".
+        type (str, optional): The type of input.
+          Either "url" or "pdf". Defaults to "url".
+        input (str, optional): The URL or PDF file path.
+          Defaults to "sample.pdf".
+        file_name (str, optional): The name of the output PDF file.
+          Defaults to "out.pdf".
 
     Returns:
         None
