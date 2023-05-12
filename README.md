@@ -149,7 +149,7 @@ You're ready to go!
 
 The initial URL looks like:
 
-<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" width="400" height="400">
+<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" width="400" height="300">
 
   
 
@@ -163,7 +163,7 @@ After we process it, it looks like:
 	
 	The original PDF looks like this
 	
-	<img  src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf"  width="400" height="400">
+	<img  src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf"  width="400" height="300">
 
 	Once we convert it it loks like:
 
