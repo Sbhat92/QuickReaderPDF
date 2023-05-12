@@ -14,7 +14,7 @@ import sys
 project = 'QuickReaderPDF'
 copyright = '2023, Shreyas Bhat'
 author = 'Shreyas Bhat'
-release = '0.1.3'
+release = '0.3.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
