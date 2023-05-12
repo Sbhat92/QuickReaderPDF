@@ -11,7 +11,7 @@ name = "QuickReaderPDF"
 authors = [{name = "Shreyas Bhat", email = "shreyasbhat92@gmail.com"}]
 description="This package converts a pdf or a html file that the user wants to read to an new pdf file, which can be read faster! The idea is bionic reading, where we bold the first three letters of every word. We hope you enjoy reading your files faster!"
 readme = "README.md"
-version = "0.1.3"
+version = "0.3.1"
 requires-python = ">=3.7"
 
 dependencies = []
