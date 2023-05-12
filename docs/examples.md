@@ -43,14 +43,14 @@ After we process it, it looks like:
 	<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  width="400" height="400">
 
 
-### More Examples:
+### More Examples
 
 If we have a barebones pdf, for example, the [CLRS home-page](https://sites.math.rutgers.edu/~ajl213/CLRS/CLRS.html), we can convert it to an easily readable pdf
 
 <img  src="https://drive.google.com/uc?id=12stpLUNJnXahrZKGVhWigHEIWDhJXZzC">
 
 
-### Webpage with ads:
+### Webpage with ads
 
 If we have a webpage like this one, [42 short stories](https://reluctantreaderbooks.com/short-stories-for-middle-school/) with ads, 
 
