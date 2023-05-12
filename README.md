@@ -105,7 +105,7 @@ You're ready to go!
 
   
 
-		`python -m pdfeditor.py <url> url <name of new pdf>`
+		`python -m QuickReaderPDF <url> url <name of new pdf>`
 
   
 
@@ -129,7 +129,7 @@ You're ready to go!
 
   
 
-		`python -m pdfeditor.py <pdf> input_file <name of new pdf>`
+		`python -m QuickReaderPDF <pdf> input_file <name of new pdf>`
 
   
 
