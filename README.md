@@ -50,7 +50,7 @@ Build:
 
   
 
-COde coverage:
+Code coverage:
 
   
 
@@ -64,8 +64,6 @@ COde coverage:
 
   
 
-  
-
 ## Description
 
   
@@ -76,6 +74,9 @@ This package converts a pdf or a html file that the user wants to read to an new
 
   
 
+## Use case
+
+People with ADHD and people who have trouble reading find it easier to concentrate reading files of this type. If you find yourself zoning out while reading often, try this library
   
 
 ## Features:
@@ -110,43 +111,47 @@ You're ready to go!
 
   
 
-  
-
-## Usage
-
-  
-
-  
 
 ## Usage
 
 1. Open a terminal in the location of the pdf file you want. 
+
 2. Use the provided functions to convert a PDF file or URL to a PDF file with bold text:
 
-   To convert a URL to a PDF file with bold text:
+### URL to PDF boldened
 
+   To convert a URL to a PDF file with bold text, say this url:
 
    url =   `"https://example.com"`
 
-   `python <path to directory with package/pdfeditor.py> <url> url <name of new pdf>`
+   `python -m pdfeditor.py <url> url <name of new pdf>`
+
+   Note that `<url>` is a keyword, which indicates to us that the input is a url.
+
+   It will make a new pdf in the same directory
+
+### PDF to PDF boldened
 
    To convert a PDF file to a PDF file with bold text:
 
-      input_file = "input.pdf"
-      `python <path to directory with package/pdfeditor.py> <pdf> input_file <name of new pdf>`
+   input_file = "input.pdf"
+
+   `python -m pdfeditor.py <pdf> input_file <name of new pdf>`
 
    Make sure to replace "https://example.com" with the desired URL and "input.pdf" with the path to your input PDF file.
 
 
-  
-
-  
 
 ## Example
 
   
-1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf like:
+1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf:
 
+   The initial URL looks like:
+   <img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ">
+
+   After we process it, it looks like:
+   
   <img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D">
 
 2. You can also use QuickReaderPDF to convert a pdf into a boldened pdf.
