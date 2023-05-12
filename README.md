@@ -49,6 +49,18 @@ People with ADHD and people who have trouble reading find it easier to concentra
 
 The user can input a pdf file or a html file, and `QuickReaderPDF` will output a pdf with the first three letters boldened.
 
+It also maintains
+
+ - Background
+ - Formatting
+ - Paragraph structure
+ - Links
+ - Images
+
+No Ads!
+
+If the webpage you are trying to convert to a PDF has embedded ads, QuickReaderPDF will not have ads in the PDF
+  
 
 ## Installation
 
@@ -135,24 +147,20 @@ You're ready to go!
 
   
 
-The initial URL looks like:
-
-<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" width="400" height="400">
-
-  
-
-After we process it, it looks like:
-
-<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D" width="400" height="400">
-
+<div style="display: flex; align-items: center;">
+    <img src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" style="width: 400px; height: 300px;">
+    <span style="font-size: 100px; margin: 0 20px;">➡️</span>
+    <img src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D" style="width: 300px; height: 300px;">
+</div>
   
 
 2. You can also use QuickReaderPDF to convert a pdf into a boldened pdf.
 	
-	The original PDF looks like this
+	The original PDF looks converted looks like:
+
+	<div style="display: flex; align-items: center;">
+    <img src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf" style="width: 400px; height: 300px;">
+    <span style="font-size: 100px; margin: 0 20px;">➡️</span>
+    <img src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  style="width: 300px; height: 300px;">
+</div>
 	
-	<img  src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf"  width="400" height="400">
-
-	Once we convert it it loks like:
-
-	<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  width="400" height="400">

@@ -15,11 +15,20 @@ Welcome to QuickReaderPDF's documentation!
 
   
 
-License: ![license](https://img.shields.io/badge/license-MIT-blue) Issues: ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF) PyPi : [  ![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/) docs status: [![Docs](https://img.shields.io/readthedocs/quickreaderpdf)](https://quickreaderpdf.readthedocs.io/en/latest/index.html)
+License: ![license](https://img.shields.io/badge/license-MIT-blue) 
+
+Issues: ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF)
+ 
+PyPi : [  ![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
+ 
+docs status:  [![Docs](https://img.shields.io/readthedocs/quickreaderpdf)](https://quickreaderpdf.readthedocs.io/en/latest/index.html)
 
   
 
-Build: [![Linting, Testing Status](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml/badge.svg)](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml) Code coverage: [![Codecov](https://codecov.io/gh/Sbhat92/QuickReaderPDF/branch/main/graph/badge.svg)](https://codecov.io/gh/Sbhat92/QuickReaderPDF)
+Build: [![Linting, Testing Status](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml/badge.svg)](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml) 
+
+
+Code coverage: [![Codecov](https://codecov.io/gh/Sbhat92/QuickReaderPDF/branch/main/graph/badge.svg)](https://codecov.io/gh/Sbhat92/QuickReaderPDF)
 
   
 
@@ -79,7 +88,9 @@ It also maintains
  - Links
  - Images
 
-  
+### No Ads!
+
+If the webpage you are trying to convert to a PDF has embedded ads, QuickReaderPDF will not have ads in the PDF
   
 
 ## Installation
@@ -125,86 +136,81 @@ You're ready to go! The library can now be invoked in the directory of your choi
 
 ### Two use cases:
 
-1.  #### URL to PDF boldened
+#### URL to PDF boldened
 
-  
 
-  
+
+
 
 To convert a URL to a PDF file with bold text, say this url:
 
-  
 
-  
+
+
 
 url = `"https://example.com"`
 
-  
 
-  
+
+
 
 `python -m pdfeditor.py <url> url <name of new pdf>`
 
-  
 
-  
+
+
 
 Note that `<url>` is a keyword, which indicates to us that the input is a url.
 
-  
 
-  
+
+
 
 It will make a new pdf in the same directory, with name `<name of new pdf>`
 
-  
 
-  
 
-2.  #### PDF to PDF boldened
 
-  
 
-  
+#### PDF to PDF boldened
+
+
+
+
 
 To convert a PDF file to a PDF file with bold text:
 
-  
 
-  
+
+
 
 input_file = "input.pdf"
 
-  
 
-  
+
+
 
 `python -m pdfeditor.py <pdf> input_file <name of new pdf>`
 
-  
 
-  
+
+
 
 Make sure to replace "https://example.com" with the desired URL and "input.pdf" with the path to your input PDF file.
 
-  
+
 
  
 
 
 
 ```eval_rst
-
 .. toctree::
+    :maxdepth: 2
+    :caption: Contents:
 
-:maxdepth: 2
-
-:caption: Contents:
-
-  
-
-modules
-examples
+    modules
+    examples
 
   
 
