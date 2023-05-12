@@ -25,10 +25,11 @@ Issues:
 
   
 
-  
-
-
 [![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
+
+
+
+[![Docs](https://img.shields.io/readthedocs/quickreaderpdf)](https://quickreaderpdf.readthedocs.io/en/latest/index.html)
 
   
 
