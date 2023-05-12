@@ -56,7 +56,17 @@ You're ready to go!
 
    Make sure to replace "https://example.com" with the desired URL and "input.pdf" with the path to your input PDF file.
 
-   
+
+## Example
+
+  
+1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf like:
+
+  <img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D">
+
+2. You can also use QuickReaderPDF to convert a pdf into a boldened pdf.
+
+
 ```eval_rst
 .. toctree::
    :maxdepth: 2

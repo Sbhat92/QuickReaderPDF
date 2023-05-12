@@ -164,7 +164,7 @@ def main_func(type = "url", input="sample.pdf", file_name="out.pdf"):
                         font_style += "text-decoration:underline;" # noqa: F821
 
                     # Add the text and formatting information to the HTML output
-                    html += f'<span style="font-size:{font_size}px; font-family:{font_name}; {font_style}">{element.get_text()}</span>'# noqa: E501
+                    html += f'<span style="font-size:{font_size}px; font-family:{font_name}; {font_style}">{element.get_text()}</span>' # noqa: E501
 
             # Add paragraph tags to the end of the page
             html += "</p>"
