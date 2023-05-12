@@ -137,14 +137,22 @@ You're ready to go!
 
 The initial URL looks like:
 
-<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ">
+<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" width="400" height="400">
 
   
 
 After we process it, it looks like:
 
-<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D">
+<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D" width="400" height="400">
 
   
 
 2. You can also use QuickReaderPDF to convert a pdf into a boldened pdf.
+	
+	The original PDF looks like this
+	
+	<img  src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf"  width="400" height="400">
+
+	Once we convert it it loks like:
+
+	<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  width="400" height="400">

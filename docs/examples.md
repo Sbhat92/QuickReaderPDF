@@ -1,0 +1,50 @@
+ 
+
+## Example
+
+  
+
+  
+
+1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf:
+
+  
+
+  
+
+The initial URL looks like:
+
+  
+
+<img  src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ">
+
+  
+
+  
+
+After we process it, it looks like:
+
+  
+
+<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D">
+
+  
+
+  
+
+2. You can also use QuickReaderPDF to convert a pdf into a boldened pdf.
+	
+	The original PDF looks like this
+	
+	<img  src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf"  width="400" height="400">
+
+	Once we convert it it loks like:
+
+	<img  src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  width="400" height="400">
+
+
+### More Examples:
+
+If we have a barebones pdf, for example, the [CLRS home-page](https://sites.math.rutgers.edu/~ajl213/CLRS/CLRS.html), we can convert it to an easily readable pdf
+
+<img  src="https://drive.google.com/uc?id=12stpLUNJnXahrZKGVhWigHEIWDhJXZzC">
