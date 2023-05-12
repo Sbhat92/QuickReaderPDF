@@ -27,13 +27,12 @@ Issues:
 
   
 
-Pypi
-
-  
 
 [![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
 
   
+
+=======
 
 # overview
 
