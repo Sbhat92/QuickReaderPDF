@@ -49,6 +49,18 @@ People with ADHD and people who have trouble reading find it easier to concentra
 
 The user can input a pdf file or a html file, and `QuickReaderPDF` will output a pdf with the first three letters boldened.
 
+It also maintains
+
+ - Background
+ - Formatting
+ - Paragraph structure
+ - Links
+ - Images
+
+No Ads!
+
+If the webpage you are trying to convert to a PDF has embedded ads, QuickReaderPDF will not have ads in the PDF
+  
 
 ## Installation
 

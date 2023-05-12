@@ -125,86 +125,81 @@ You're ready to go! The library can now be invoked in the directory of your choi
 
 ### Two use cases:
 
-1.  #### URL to PDF boldened
+#### URL to PDF boldened
 
-  
 
-  
+
+
 
 To convert a URL to a PDF file with bold text, say this url:
 
-  
 
-  
+
+
 
 url = `"https://example.com"`
 
-  
 
-  
+
+
 
 `python -m pdfeditor.py <url> url <name of new pdf>`
 
-  
 
-  
+
+
 
 Note that `<url>` is a keyword, which indicates to us that the input is a url.
 
-  
 
-  
+
+
 
 It will make a new pdf in the same directory, with name `<name of new pdf>`
 
-  
 
-  
 
-2.  #### PDF to PDF boldened
 
-  
 
-  
+#### PDF to PDF boldened
+
+
+
+
 
 To convert a PDF file to a PDF file with bold text:
 
-  
 
-  
+
+
 
 input_file = "input.pdf"
 
-  
 
-  
+
+
 
 `python -m pdfeditor.py <pdf> input_file <name of new pdf>`
 
-  
 
-  
+
+
 
 Make sure to replace "https://example.com" with the desired URL and "input.pdf" with the path to your input PDF file.
 
-  
+
 
  
 
 
 
 ```eval_rst
-
 .. toctree::
+    :maxdepth: 2
+    :caption: Contents:
 
-:maxdepth: 2
-
-:caption: Contents:
-
-  
-
-modules
-examples
+    modules
+    examples
 
   
 
