@@ -15,11 +15,20 @@ Welcome to QuickReaderPDF's documentation!
 
   
 
-License: ![license](https://img.shields.io/badge/license-MIT-blue) Issues: ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF) PyPi : [  ![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/) docs status: [![Docs](https://img.shields.io/readthedocs/quickreaderpdf)](https://quickreaderpdf.readthedocs.io/en/latest/index.html)
+License: ![license](https://img.shields.io/badge/license-MIT-blue) 
+
+Issues: ![issues](https://img.shields.io/github/issues/Sbhat92/QuickReaderPDF)
+ 
+PyPi : [  ![PyPI](https://img.shields.io/pypi/v/QuickReaderPDF)](https://pypi.org/project/QuickReaderPDF/)
+ 
+docs status:  [![Docs](https://img.shields.io/readthedocs/quickreaderpdf)](https://quickreaderpdf.readthedocs.io/en/latest/index.html)
 
   
 
-Build: [![Linting, Testing Status](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml/badge.svg)](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml) Code coverage: [![Codecov](https://codecov.io/gh/Sbhat92/QuickReaderPDF/branch/main/graph/badge.svg)](https://codecov.io/gh/Sbhat92/QuickReaderPDF)
+Build: [![Linting, Testing Status](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml/badge.svg)](https://github.com/Sbhat92/QuickReaderPDF/actions/workflows/setup.yaml) 
+
+
+Code coverage: [![Codecov](https://codecov.io/gh/Sbhat92/QuickReaderPDF/branch/main/graph/badge.svg)](https://codecov.io/gh/Sbhat92/QuickReaderPDF)
 
   
 
@@ -79,7 +88,9 @@ It also maintains
  - Links
  - Images
 
-  
+### No Ads!
+
+If the webpage you are trying to convert to a PDF has embedded ads, QuickReaderPDF will not have ads in the PDF
   
 
 ## Installation
