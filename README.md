@@ -149,7 +149,7 @@ You're ready to go!
 
 <div style="display: flex; align-items: center;">
     <img src="https://drive.google.com/uc?id=1tRH3PCZFTXmvremGEdDzHud1lBLHrWCJ" style="width: 400px; height: 300px;">
-    <span style="font-size: 40px; margin: 0 20px;">➡️</span>
+    <span style="font-size: 100px; margin: 0 20px;">➡️</span>
     <img src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D" style="width: 300px; height: 300px;">
 </div>
   
@@ -160,7 +160,7 @@ You're ready to go!
 
 	<div style="display: flex; align-items: center;">
     <img src="https://drive.google.com/uc?id=1R7XDMS8hlB7v12XIpU06-q_-yybJBrkf" style="width: 400px; height: 300px;">
-    <span style="font-size: 40px; margin: 0 20px;">➡️</span>
+    <span style="font-size: 100px; margin: 0 20px;">➡️</span>
     <img src="https://drive.google.com/uc?id=1YfQ1A8f25FnTiMjLNwGDHZQs5S3Zsw6D"  style="width: 300px; height: 300px;">
 </div>
 	
