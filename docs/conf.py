@@ -8,7 +8,8 @@
 
 import sphinx_rtd_theme
 from recommonmark.transform import AutoStructify
-import os,sys
+import os
+import sys
 
 project = 'QuickReaderPDF'
 copyright = '2023, Shreyas Bhat'
