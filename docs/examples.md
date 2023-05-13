@@ -6,7 +6,7 @@
 
   
 
-1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf:
+1. You can convert any url, for example: [A great short story](https://americanliterature.com/author/philip-k-dick/short-story/the-eyes-have-it) and convert it into a pdf :
 
   
 
