@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='QuickReaderPDF',
-    version="0.3.2",
+    version="0.3.3",
     install_requires=[
     'pypdf==3.7.0',
     'pdfkit==1.0.0',
