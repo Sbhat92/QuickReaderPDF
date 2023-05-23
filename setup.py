@@ -11,7 +11,7 @@ setup(
     'wkhtmltopdf==0.2',
     'beautifulsoup4==4.11.1',
     'pdfminer.six==20221105',
-    'requests==2.28.2',
+    'requests==2.31.0',
     'weasyprint==58.1',
     ],  
     python_requires='>=3.6',
