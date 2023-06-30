@@ -5,7 +5,7 @@ setup(
     name='QuickReaderPDF',
     version="0.3.3",
     install_requires=[
-    'pypdf==3.7.0',
+    'pypdf==3.9.0',
     'pdfkit==1.0.0',
     'fpdf==1.7.2',
     'wkhtmltopdf==0.2',
